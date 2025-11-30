@@ -1,0 +1,168 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-11-30T18:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:shopappbe",
+  "resources": [
+    {
+      "_id": "wrk_shopappbe",
+      "_type": "workspace",
+      "name": "ShopAppBE",
+      "scope": "collection"
+    },
+    {
+      "_id": "env_shopappbe_base",
+      "_type": "environment",
+      "parentId": "wrk_shopappbe",
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 0
+    },
+    {
+      "_id": "fld_shoppinglist",
+      "_type": "request_group",
+      "parentId": "wrk_shopappbe",
+      "name": "ShoppingList API",
+      "description": "",
+      "metaSortKey": -1000
+    },
+    {
+      "_id": "req_sl_create",
+      "_type": "request",
+      "parentId": "fld_shoppinglist",
+      "name": "shoppingList/create",
+      "description": "",
+      "method": "POST",
+      "url": "http://localhost:3000/shoppingList/create",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Example list from Insomnia\",\n  \"description\": \"Example description\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "X-User-Id", "value": "user1" },
+        { "name": "X-User-Profiles", "value": "Operatives" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1000,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_sl_get",
+      "_type": "request",
+      "parentId": "fld_shoppinglist",
+      "name": "shoppingList/get",
+      "description": "",
+      "method": "POST",
+      "url": "http://localhost:3000/shoppingList/get",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"id\": \"SOME_ID\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "X-User-Id", "value": "user1" },
+        { "name": "X-User-Profiles", "value": "Operatives" }
+      ],
+      "authentication": {},
+      "metaSortKey": -900,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_sl_list",
+      "_type": "request",
+      "parentId": "fld_shoppinglist",
+      "name": "shoppingList/list",
+      "description": "",
+      "method": "POST",
+      "url": "http://localhost:3000/shoppingList/list",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"ownedOnly\": true\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "X-User-Id", "value": "user1" },
+        { "name": "X-User-Profiles", "value": "Operatives" }
+      ],
+      "authentication": {},
+      "metaSortKey": -800,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_sl_update",
+      "_type": "request",
+      "parentId": "fld_shoppinglist",
+      "name": "shoppingList/update",
+      "description": "",
+      "method": "POST",
+      "url": "http://localhost:3000/shoppingList/update",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"id\": \"SOME_ID\",\n  \"name\": \"Updated name\",\n  \"description\": \"Updated description\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "X-User-Id", "value": "user1" },
+        { "name": "X-User-Profiles", "value": "Operatives" }
+      ],
+      "authentication": {},
+      "metaSortKey": -700,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_sl_delete",
+      "_type": "request",
+      "parentId": "fld_shoppinglist",
+      "name": "shoppingList/delete",
+      "description": "",
+      "method": "POST",
+      "url": "http://localhost:3000/shoppingList/delete",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"id\": \"SOME_ID\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "X-User-Id", "value": "user1" },
+        { "name": "X-User-Profiles", "value": "Operatives" }
+      ],
+      "authentication": {},
+      "metaSortKey": -600,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    }
+  ]
+}
